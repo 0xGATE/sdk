@@ -1,0 +1,27 @@
+{
+  "name": "@sushiswap/miso-sdk",
+  "version": "1.0.0-canary.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "module": "dist/miso-sdk.esm.js",
+  "repository": {
+    "url": "sushiswap/sdk",
+    "directory": "packages/miso-sdk"
+  },
+  "scripts": {
+    "lint": "tsdx lint src test",
+    "build": "tsdx build",
+    "watch": "tsdx watch",
+    "test": "tsdx test",
+    "prepublishOnly": "tsdx build",
+    "version:canary": "yarn version prerelease",
+    "publish:canary": "npm publish --access public --tag canary"
+  },
+  "devDependencies": {
+    "tsdx": "^0.14.1"
+  }
+}
